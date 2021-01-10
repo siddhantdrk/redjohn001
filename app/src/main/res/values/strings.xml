@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">redjohn001</string>
+    <string name="on_boarding_img">on_boarding_img</string>
+    <string name="next">Next</string>
+    <string name="get_started">Get Started</string>
+    <string name="skip">Skip</string>
+    <string name="welcome_logo">welcome_logo</string>
+    <string name="welcome">Welcome!</string>
+    <string name="sign_in">Sign In</string>
+    <string name="register">Register</string>
+    <string name="enter_via_code">Enter via Code</string>
+    <string name="already_have_an_account">Already have an account?</string>
+</resources>
