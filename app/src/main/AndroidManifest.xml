@@ -9,17 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Redjohn001">
-        <activity android:name=".WelcomeActivity"
-            android:theme="@style/welcome_activity_style">
+        <activity
+            android:name=".MainRegistrationActivity"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".OnBoardingActivity">
-        </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".OnBoardingActivity" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

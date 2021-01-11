@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
@@ -8,32 +8,28 @@
         android:id="@+id/on_boarding_img"
         android:layout_width="match_parent"
         android:layout_height="280dp"
-        android:scaleType="centerInside"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/on_boarding_img_three"
-        android:contentDescription="@string/on_boarding_img" />
-    
+        android:contentDescription="@string/on_boarding_img"
+        android:scaleType="centerInside"
+        android:src="@drawable/on_boarding_img_three" />
+
     <TextView
         android:id="@+id/on_boarding_title_txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Set Schedules"
         android:layout_marginBottom="16dp"
-        android:textSize="28sp"
-        android:fontFamily="@font/inter_bold"
-        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="Set Schedules"
         android:textAllCaps="false"
-        android:gravity="center"/>
+        android:textAppearance="@style/bold_text"
+        android:textColor="@color/black" />
 
     <TextView
         android:id="@+id/on_boarding_description_txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="start"
-        android:textColor="@color/color_secondary_text"
-        android:textSize="14sp"
-        android:fontFamily="@font/inter_medium"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem"/>
-
-
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem"
+        android:textAppearance="@style/medium_text"
+        android:textColor="@color/color_secondary_text" />
 </LinearLayout>

@@ -10,4 +10,22 @@
     <string name="register">Register</string>
     <string name="enter_via_code">Enter via Code</string>
     <string name="already_have_an_account">Already have an account?</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="forgot_npassword">Forgot\nPassword?</string>
+    <string name="email_address">Email Address</string>
+    <string name="email_hint">abc.98@gmail.com</string>
+    <string name="send_code">Send Code</string>
+    <string name="password">Password</string>
+    <string name="password_hint">****************</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="change_password">Change Password</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="your_email_is_confirmed_please_reset_your_password">Your email is confirmed. Please reset your password.</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="new_naccount">New\nAccount</string>
+    <string name="username">Username</string>
+    <string name="alice">Alice</string>
+    <string name="enter_invite_code">Enter Invite Code</string>
+    <string name="continue_txt">Continue</string>
 </resources>

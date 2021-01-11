@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:padding="32dp"
         android:orientation="vertical"
+        android:fitsSystemWindows="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -21,7 +22,7 @@
             android:id="@+id/welcome_logo_img"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
+            android:layout_marginBottom="16dp"
             android:contentDescription="@string/welcome_logo"
             android:src="@drawable/welcome_logo"/>
 
@@ -30,18 +31,16 @@
             android:layout_height="wrap_content"
             android:text="@string/welcome"
             android:textColor="@color/white"
-            android:textSize="28sp"
-            android:fontFamily="@font/inter_bold"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="8dp"
+            android:textAppearance="@style/bold_text" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem"
             android:textColor="@color/white"
-            android:fontFamily="@font/inter_medium"
-            android:layout_marginBottom="24dp"/>
+            android:layout_marginBottom="16dp"
+            android:textAppearance="@style/medium_text" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/sign_in_button"
@@ -50,10 +49,9 @@
             android:layout_marginBottom="8dp"
             android:paddingTop="16dp"
             android:paddingBottom="16dp"
-            android:fontFamily="@font/inter_medium"
             android:text="@string/sign_in"
             android:textAllCaps="false"
-            android:textSize="14sp"
+            android:textAppearance="@style/medium_text"
             app:cornerRadius="8dp"/>
 
         <com.google.android.material.button.MaterialButton
@@ -65,10 +63,9 @@
             android:textColor="@color/black"
             android:paddingTop="16dp"
             android:paddingBottom="16dp"
-            android:fontFamily="@font/inter_medium"
+            android:textAppearance="@style/medium_text"
             android:text="@string/register"
             android:textAllCaps="false"
-            android:textSize="14sp"
             app:cornerRadius="8dp"/>
 
         <com.google.android.material.button.MaterialButton
@@ -78,10 +75,9 @@
             android:layout_marginBottom="8dp"
             android:paddingTop="16dp"
             android:paddingBottom="16dp"
-            android:fontFamily="@font/inter_medium"
+            android:textAppearance="@style/medium_text"
             android:text="@string/enter_via_code"
             android:textAllCaps="false"
-            android:textSize="14sp"
             app:cornerRadius="8dp"/>
 
         <LinearLayout

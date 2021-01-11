@@ -17,4 +17,51 @@
     <style name="welcome_activity_style" parent="Theme.Redjohn001">
         <item name="android:windowBackground">@drawable/welcome_background</item>
     </style>
+
+    <style name="main_registration_activity_style" parent="Theme.Redjohn001">
+        <item name="android:background">@drawable/boy_common_background</item>
+    </style>
+
+    <style name="bold_text" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">28sp</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="medium_text" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+    </style>
+
+    <style name="txt_inp_layout_style" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="hintTextAppearance">@style/medium_text</item>
+        <item name="android:textAppearance">@style/medium_text</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxStrokeWidth">0.5dp</item>
+    </style>
+
+    <style name="txt_inp_edt_style" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="code_edt_txt_style" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/primary_blue</item>
+        <item name="fontFamily">@font/inter_regular</item>
+    </style>
+
+    <style name="code_txt_inp_style" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="hintEnabled">false</item>
+        <item name="hintAnimationEnabled">false</item>
+        <item name="boxStrokeWidth">1dp</item>
+    </style>
 </resources>
