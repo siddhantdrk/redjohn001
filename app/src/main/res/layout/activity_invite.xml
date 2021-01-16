@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".InviteActivity">
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/app_bar_toolbar_custom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Add Parent"
+                android:textColor="@color/brown_text_color"
+                android:textSize="13sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/add_parents_rv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="48dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="1"
+                    tools:listitem="@layout/add_parent_rv_item" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/add_parents_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="-48dp"
+                    android:layout_toEndOf="@id/add_parents_rv"
+                    android:backgroundTint="#E4E4E4"
+                    android:outlineProvider="none"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_add_fab"
+                    app:borderWidth="0dp"
+                    app:fabCustomSize="46dp"
+                    app:maxImageSize="14dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="@string/add_code"
+                android:textColor="@color/brown_text_color"
+                android:textSize="13sp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp"
+                app:contentPaddingBottom="12dp"
+                app:contentPaddingLeft="16dp"
+                app:contentPaddingRight="16dp"
+                app:contentPaddingTop="12dp"
+                app:strokeColor="#E7E7E7"
+                app:strokeWidth="1dp">
+
+                <TextView
+                    android:id="@+id/code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="7h3h7h91jyhdk8"
+                    android:textColor="@color/brown_text_color"
+                    android:textSize="15sp" />
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="@string/school_name"
+                android:textColor="@color/brown_text_color"
+                android:textSize="13sp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp"
+                app:contentPaddingBottom="12dp"
+                app:contentPaddingLeft="16dp"
+                app:contentPaddingRight="16dp"
+                app:contentPaddingTop="12dp"
+                app:strokeColor="#E7E7E7"
+                app:strokeWidth="1dp">
+
+                <TextView
+                    android:id="@+id/school_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="6391 Elgin St. Celina, Delaware 10299"
+                    android:textColor="@color/brown_text_color"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="@string/date"
+                android:textColor="@color/brown_text_color"
+                android:textSize="13sp" />
+
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/invite_shift_tb_layout"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_margin="32dp"
+                app:tabBackground="@drawable/shift_tab_bg"
+                app:tabIndicatorHeight="0dp"
+                app:tabPaddingEnd="16dp"
+                app:tabPaddingStart="16dp"
+                app:tabRippleColor="@android:color/transparent"
+                app:tabSelectedTextColor="@color/primary_blue"
+                app:tabTextAppearance="@style/ShiftTabStyle"
+                app:tabTextColor="#D4D4D4">
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Morning Shift" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Afternoon Shift" />
+
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <include
+                layout="@layout/time_table_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="32dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Pick up time"
+                android:textColor="@color/brown_text_color"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/pick_hr_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_bg"
+                    android:entries="@array/hr_array"
+                    android:spinnerMode="dropdown"
+                    android:theme="@style/time_spinner_style" />
+
+                <Spinner
+                    android:id="@+id/pick_min_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_bg"
+                    android:entries="@array/hr_array"
+                    android:spinnerMode="dropdown"
+                    android:theme="@style/time_spinner_style" />
+
+                <Spinner
+                    android:id="@+id/pick_am_pm_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_bg"
+                    android:entries="@array/am_pm_array"
+                    android:spinnerMode="dropdown"
+                    android:theme="@style/time_spinner_style" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Drop off time"
+                android:textColor="@color/brown_text_color"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/drop_hr_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_bg"
+                    android:entries="@array/hr_array"
+                    android:spinnerMode="dropdown"
+                    android:theme="@style/time_spinner_style" />
+
+                <Spinner
+                    android:id="@+id/drop_min_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_bg"
+                    android:entries="@array/hr_array"
+                    android:spinnerMode="dropdown"
+                    android:theme="@style/time_spinner_style" />
+
+                <Spinner
+                    android:id="@+id/drop_am_pm_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_bg"
+                    android:entries="@array/am_pm_array"
+                    android:spinnerMode="dropdown"
+                    android:theme="@style/time_spinner_style" />
+
+            </LinearLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/save_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/inter_bold"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="Send Invite"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                app:cornerRadius="8dp" />
+
+            <TextView
+                android:id="@+id/cancel_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="@font/inter_bold"
+                android:padding="8dp"
+                android:text="Cancel"
+                android:textColor="@color/color_red"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

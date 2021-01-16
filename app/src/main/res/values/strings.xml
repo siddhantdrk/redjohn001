@@ -28,4 +28,60 @@
     <string name="alice">Alice</string>
     <string name="enter_invite_code">Enter Invite Code</string>
     <string name="continue_txt">Continue</string>
+    <string name="schedules">Schedules</string>
+    <string name="kids">Kids</string>
+    <string name="notifications">Notifications</string>
+    <string name="settings">Settings</string>
+    <string name="change_address">Change Address</string>
+    <string name="change_email">Change Email</string>
+    <string name="alarm_before_ride">Alarm before ride</string>
+    <string name="invite_code">Invite code</string>
+    <string name="school_address">School Address</string>
+    <string name="pick_up_time">Pick up time</string>
+    <string name="mo">Mo</string>
+    <string name="tu">Tu</string>
+    <string name="we">We</string>
+    <string name="th">Th</string>
+    <string name="fr">Fr</string>
+    <string name="sa">Sa</string>
+    <string name="su">Su</string>
+    <string name="activity">Activity</string>
+    <string name="add_kids">Add Kids</string>
+    <string name="school_name">School Name</string>
+    <string name="date">Date</string>
+    <string name="shift">Shift</string>
+    <string name="add_code">Add Code</string>
+    <string name="add_parent">Add Parent</string>
+    <string name="days">DAYS</string>
+    <string name="from">FROM</string>
+    <string name="to">TO</string>
+    <string name="monday">monday</string>
+    <string name="tuesday">tuesday</string>
+    <string name="wednesday">wednesday</string>
+    <string name="thursday">thursday</string>
+    <string name="friday">friday</string>
+    <string-array name="shift_array">
+        <item>"1 Shift"</item>
+        <item>"Two Shifts"</item>
+    </string-array>
+    <string-array name="am_pm_array">
+        <item>"AM"</item>
+        <item>"PM"</item>
+    </string-array>
+
+    <string-array name="hr_array">
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
+        <item>"6"</item>
+        <item>"7"</item>
+        <item>"8"</item>
+        <item>"9"</item>
+        <item>"10"</item>
+        <item>"11"</item>
+        <item>"12"</item>
+    </string-array>
+
 </resources>

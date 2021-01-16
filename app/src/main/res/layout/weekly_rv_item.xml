@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp">
+
+    <LinearLayout
+        android:id="@+id/column_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="38dp"
+            android:fontFamily="@font/inter_medium"
+            android:text="MONDAY"
+            android:textColor="#B4B4B4"
+            android:textSize="12sp" />
+
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="85dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="38dp"
+            android:background="#9C96FF" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/weekly_tasks_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/column_1"
+        android:visibility="visible"
+        tools:itemCount="1"
+        tools:listitem="@layout/weekly_task_rv_item" />
+
+</RelativeLayout>

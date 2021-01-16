@@ -10,4 +10,17 @@
     <color name="color_red">#F30000</color>
     <color name="new_pwd_hint_color">#D1D1D1</color>
     <color name="invite_code_edt_color">#DADADA</color>
+    <color name="brown_text_color">#583333</color>
+    <color name="card_view_stroke_color">#EBEBEB</color>
+    <color name="invite_color">#5F5D7E</color>
+    <color name="msg_color">#329974</color>
+    <color name="wrong_color">#FF4D52</color>
+    <color name="pick_up_color">#F18F48</color>
+    <color name="purple_color">#6C63FF</color>
+    <color name="dark_blue_color">#305AFE</color>
+    <color name="task_strip_color_orange">#FF7F57</color>
+    <color name="task_strip_color_green">#329974</color>
+    <color name="task_fill_faint_orange">#FFD5C8</color>
+    <color name="task_fill_faint_green">#A4EFD4</color>
+    <color name="table_layout_gray_color">#B4B4B4</color>
 </resources>

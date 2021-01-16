@@ -1,18 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:id="@+id/drawer_layout"
+    android:background="@color/white"
+    tools:context=".MainActivity"
+    tools:openDrawer="start">
 
-    <TextView
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view_main"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:textColor="@color/brown_text_color"
+        app:headerLayout="@layout/nav_header_layout"
+        app:itemHorizontalPadding="48dp"
+        app:itemIconTint="#DADADA"
+        app:itemTextAppearance="@style/medium_text"
+        app:menu="@menu/nav_drawer_main">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="48dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/ic_logout_icon"
+            android:drawablePadding="32dp"
+            android:text="Log out"
+            android:textAllCaps="false"
+            android:textAppearance="@style/medium_text"
+            android:textColor="@color/color_red" />
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context=".NotificationsFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New"
+        android:textAppearance="@style/medium_text"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/mark_all_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="Mark as read"
+        android:textAppearance="@style/medium_text"
+        android:textColor="@color/color_red" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notification_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mark_all_read"
+        android:layout_marginTop="24dp"
+        android:paddingBottom="80dp"
+        tools:itemCount="5"
+        tools:listitem="@layout/notification_rv_item" />
+
+    <TextView
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notification_rv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-48dp"
+        android:text="Clear"
+        android:textAppearance="@style/medium_text"
+        android:textColor="@color/color_red" />
+
+</RelativeLayout>
