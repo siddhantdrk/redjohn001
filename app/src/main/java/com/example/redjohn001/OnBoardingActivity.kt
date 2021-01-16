@@ -39,6 +39,7 @@ class OnBoardingActivity : AppCompatActivity() {
 
         skip.setOnClickListener {
             startActivity(Intent(applicationContext, WelcomeActivity::class.java))
+            finish()
         }
 
         nextBtn = findViewById(R.id.next_get_started_button)
@@ -55,6 +56,7 @@ class OnBoardingActivity : AppCompatActivity() {
         nextBtn.setOnClickListener {
             if (onBoardingViewPager.currentItem == 3) {
                 startActivity(Intent(applicationContext, WelcomeActivity::class.java))
+                finish()
             }
             onBoardingViewPager.currentItem = onBoardingViewPager.currentItem + 1
         }
