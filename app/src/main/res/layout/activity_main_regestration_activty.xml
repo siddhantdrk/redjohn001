@@ -14,7 +14,7 @@
         android:fitsSystemWindows="true"
         android:scaleType="fitXY"
         android:src="@drawable/boy_common_background"
-        app:layout_constraintDimensionRatio="375:812"
+        app:layout_constraintDimensionRatio="375:406"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,7 +24,7 @@
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="272dp"
+        android:layout_marginTop="248dp"
         android:background="@drawable/registration_frame_layout_bg"
         android:padding="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
